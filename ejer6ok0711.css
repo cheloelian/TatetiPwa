@@ -1,0 +1,121 @@
+*
+	{
+		margin:0;
+		padding:0;
+		transition: 1s;
+	}
+body
+	{
+		background-color: rgba(160,247,167,1); /* rgba :rojo verde azul, canal alfa transparencia*/
+		height: 100Vh;
+		display: grid;
+
+		/* para poner puntaje de jugadores*/
+		grid-template-rows: 90px 1fr;  /* porque la letra tiene 40px */
+	}
+div
+	{
+		background-color: rgba(255,255,255,0.5); /*0 0 0 negro mas transpencia 255 255 255 hacen blanco*/
+		border-radius: 25px;
+		display:grid;
+		justify-items:center;
+		align-items: center;
+	}
+div:hover
+	{
+		background-color: rgba(0,0,0,.2);
+		border-radius: 10px;
+	}
+header
+	{
+		background-color: rgba(0,0,0,0.1);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		justify-items:center;
+		border-radius: 25px;
+		margin: 32px 32px 0 32px;
+	}
+section
+	{
+		display: grid;
+		width: 310px;
+		height: 310px;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		gap: 5px;
+		margin:auto; 
+	}
+h2/* */
+	{
+		font-family: Arial;
+		font-size: 85px;
+		text-align: center;
+		margin:auto;
+	}
+h1/* */
+	{
+		font-family: Arial;
+		font-size: 40px;
+		text-align: center;
+		margin:auto;
+	}
+
+.X
+	{
+		color:red;
+	}
+.O
+	{
+		color:blue;
+	}
+.modal
+	{
+		display: grid;
+		position: absolute; /* guarda su posicion en el html*/
+		height: 100Vh;
+		width: 100Vw;
+		background-color: rgba(0,0,0,0.5);
+		overflow: hidden; /* lo q sale se oculte, el contenido no sale de su contenedor*/
+	}
+.modal > section
+	{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		height: 400px;
+	}
+.modal > section > h3, .modal > section > h4/*h3 dentro de section dentro de class modal */
+	{
+		font-size: 50px;
+		font-family: Arial;
+		color: white;
+		text-align: center;
+	}
+.modal > section > h4
+	{
+		font-size: 30px;
+	}
+.modal > section > button
+	{
+		font-size: 30px;
+		border-radius: 25px;
+		margin: 10px;
+		background-color: rgba(255,0,0,1);
+		border: 0;
+		box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+	}
+.modal > section > button:hover
+	{
+		margin: 15px;
+		background-color: rgba(255,0,0,1);
+		box-shadow: 0px 0px 10px 5px rgba(0,0,0,0);
+	}
+.oculto /* clase para que empecemos el juego y desaparezca la priemra ventana */
+	{
+		width: 0;
+	}
+.elegido
+	{
+		background-color: rgba(0,0,0,0.1);
+	}
