@@ -1,9 +1,35 @@
 {
 "name":"TA TE TI",
 "_comentario":"name es el nombre del splash de la app",
-"short_name":"Tat-te-ti"
+"short_name":"Tat-te-ti",
 "_comentario":"este es el nombre de abajo del icono.",
-"start_url":"index.html"
-
-
+"start_url":"index.html",
+"display":"standalone",
+"_comentario":"name es el nombre del splash d",
+"orientation":"portrait-primary",
+"_comentario":"modo para q sitio inicie modo retrato",
+"theme_color":"rgba(160,247,167,1)",
+"background_color":"rgba(160,247,167,1)",
+"icons":[
+			{
+				"src":"img/ico96x96.png",
+				"type":"image/png",
+				"size":"96x96"
+			},
+			{
+				"src":"img/ico144x144.png",
+				"type":"image/png",
+				"size":"144x144"
+			},
+			{
+				"src":"img/ico96x96.png",
+				"type":"image/png",
+				"size":"96x96"
+			},
+			{
+				"src":"img/ico512x512.png",
+				"type":"image/png",
+				"size":"512x512"
+			},
+		]
 }
