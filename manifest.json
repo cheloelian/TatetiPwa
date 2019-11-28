@@ -38,10 +38,5 @@
 		"src":"img/ico512x512.png",
 		"type":"image/png",
 		"size":"512x512"
-		},
-		"related_applications": {
-    	"platform": "play",
-    	"url": "https://play.google.com/store"
-  	}]
-		
+		}]
 }
