@@ -35,6 +35,10 @@
 		"type":"image/png",
 		"size":"144x144"
 		}, {
+		"src":"img/ico192.png",
+		"type":"image/png",
+		"size":"192x192"
+		}, {
 		"src":"img/ico256.png",
 		"type":"image/png",
 		"size":"256x256"
