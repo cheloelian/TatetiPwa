@@ -8,8 +8,8 @@
 "_comentario":"name es el nombre del splash d",
 "orientation":"portrait-primary",
 "_comentario":"modo para q sitio inicie modo retrato",
-"theme_color":"rgba(160,247,167,1)",
-"background_color":"rgba(160,247,167,1)",
+"theme_color":"#A0F7A7",
+"background_color":"#A0F7A7",
 "icons":[{
 		"src":"img/ico32.png",
 		"type":"image/png",
