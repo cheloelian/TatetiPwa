@@ -1,5 +1,5 @@
 // Instalar el service worker
-self.addEventListener("Install", evt =>{console.log("El Srvice Worker se instalo");});
+self.addEventListener("Install", evt =>{console.log("El Service Worker se instalo")});
 
 //Activar el service worker
 
