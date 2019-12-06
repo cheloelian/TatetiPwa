@@ -1,6 +1,6 @@
 const nombreCache="sitio-cache";
 
-const elementos=["/","/index.html","/ejer6ok0711.css","/ejer6ok0711.js"];
+const elementos=["https://cheloelian.github.io/TatetiPwa/","index.html","ejer6ok0711.css","ejer6ok0711.js","manifest.json","app.js"];
 
 // Instalar el service worker
 self.addEventListener("install", evt =>
