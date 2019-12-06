@@ -22,6 +22,7 @@ self.addEventListener("activate", evt =>{
 			return Promise.all(Keys
 				.filter(Key => key !== nombreCache)
 				.map(key => caches.delete(key))
+				)
 		})
 		);
 });
