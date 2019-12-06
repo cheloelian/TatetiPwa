@@ -15,8 +15,16 @@ self.addEventListener("install", evt =>
 		);
 });
 //Activar el service worker
-self.addEventListener("activate", evt =>{console.log("El Service Worker se activo");});
-
+self.addEventListener("activate", evt =>{
+	evt.waitUntil(
+		caches.keys().then(Keys => {
+			console.log(keys);
+			return Promise.all(Keys
+				.filter(Key => key !== nombreCache)
+				.map(key => caches.delete(key))
+		})
+		);
+});
 //Eventos Fetch - fetch request o pedido de busqueda
 self.addEventListener("fetch", evt =>{
 	console.log("Se atrapo el Evento: ", evt);
