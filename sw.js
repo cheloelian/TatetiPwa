@@ -1,4 +1,4 @@
-const nombreCache="sitio-cache";
+const nombreCache="sitio-cache-v2";// era sin v2
 
 const elementos=["https://cheloelian.github.io/TatetiPwa/","index.html","ejer6ok0711.css","ejer6ok0711.js","manifest.json","app.js"];
 
