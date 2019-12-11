@@ -2,7 +2,7 @@ const nombreCache="sitio-cache-v2";// era sin v2
 
 const dinamicoCache="sitio-dinamico-v1";
 
-const elementos=["https://cheloelian.github.io/TatetiPwa/","index.html","ejer6ok0711.css","ejer6ok0711.js","manifest.json","app.js"];
+const elementos=["https://cheloelian.github.io/TatetiPwa/","index.html","ejer6ok0711.css","ejer6ok0711.js","manifest.json","app.js","fallback.html"];
 
 // Instalar el service worker
 self.addEventListener("install", evt =>
