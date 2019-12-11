@@ -21,7 +21,7 @@ self.addEventListener("activate", evt =>{
 	evt.waitUntil(
 		caches.keys().then(key => {
 			console.log(key);
-			return Promise.all(keys
+			return promise.all(key
 				.filter(key => key !== nombreCache)
 				.map(key => caches.delete(key))
 				)
@@ -36,13 +36,14 @@ self.addEventListener("fetch", evt =>{
 			return  cacheRes || fetch(evt.request).then(fetchRes => {
 				return caches.open(dinamicoCache).then(cache => {
 					cache.put(evt.request.url, fetchRes.clone());
-					//limiteCache(dinamicoCache, 5);
+					limiteCache(dinamicoCache, 5);
 					return fetchRes;
 				})
 			})
+		}).catch(() => {
+			if(evt.request.url.indexOf(".html") > -1){
+				return caches.match("fallback.html");
+			}
 		})
 	);
 });
-
-
-
