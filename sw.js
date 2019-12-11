@@ -4,10 +4,20 @@ const dinamicoCache="sitio-dinamico-v1";
 
 const elementos=["https://cheloelian.github.io/TatetiPwa/","index.html","ejer6ok0711.css","ejer6ok0711.js","manifest.json","app.js","fallback.html"];
 
+
+const limiteCache = (nombre, tamaño) => {
+	caches.open(nombre).then(cache => {
+		cache.keys().then(keys => {
+			if(keys.length > tamaño){
+				cache.delete(keys[0]).then(limiteCache(nombre, tamaño));
+			}
+		})
+	})
+};
 // Instalar el service worker
 self.addEventListener("install", evt =>
 {
-	//console.log("El Service Worker se instalo");
+	console.log("El Service Worker se instalo");
 	evt.waitUntil(
 		caches.open(nombreCache).then((cache)=> 
 		{
