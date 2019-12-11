@@ -19,10 +19,10 @@ self.addEventListener("install", evt =>
 //Activar el service worker
 self.addEventListener("activate", evt =>{
 	evt.waitUntil(
-		caches.keys().then(key => {
-			console.log(key);
-			return promise.all(key
-				.filter(key => key !== nombreCache)
+		caches.keys().then(keys => {
+			console.log(keys);
+			return Promise.all(keys
+				.filter(key => key !== nombreCache && key !== dinamicoCache)
 				.map(key => caches.delete(key))
 				)
 		})
